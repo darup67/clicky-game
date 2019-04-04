@@ -1,0 +1,12 @@
+import React from "react";
+import "./score.css";
+import Arrow from 'react-icons/lib/fa/caret-right';
+
+//stateless component
+const Score = props => ( < div className = "gameScore" >
+    <
+    h3 className = "score" > Your Score < Arrow / > { props.total } < /h3> <
+    h4 className = "status" > { props.status } < /h4> </div >
+);
+
+export default Score;
