@@ -3,13 +3,13 @@ import wrapper from "./components/wrapper";
 import card from "./components/card";
 import score from "./components/score";
 import superheroes from "./cards.json";
-import "./App.css";
+import "./app.css";
 
 class App extends Component {
     // Setting this.state.pups to the cards json array
     state = {
         superheroes,
-        clickedPuppyIds: [],
+        SuperherosClickIds: [],
         score: 0,
         goal: 8,
         status: ""
@@ -23,7 +23,7 @@ class App extends Component {
             this.setState({ SuperherosClickIds: [], score: 0, status: "Game Over! You lost. Click to play again!" });
             return;
         } else {
-            clickedPuppyIds.push(id)
+            SuperherosClickIds.push(id)
 
             if (SuperherosClickIds.length === 8) {
                 this.setState({ score: 8, status: "You Won! Click to play again!", SuperherosClickIds: [] });

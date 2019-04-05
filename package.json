@@ -1,0 +1,8 @@
+{
+  "name": "clicky-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/darup67/clicky-game.git",
+  "author": "Dhruv Patel <darup67@gmail.com>",
+  "license": "MIT"
+}
