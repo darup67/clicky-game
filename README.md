@@ -1,6 +1,4 @@
-# clicky-game
-
-Clicky Game :video_game:
+# Clicky Game :video_game:
 
 # Techonlogies
 :heavy_minus_sign: React.js
