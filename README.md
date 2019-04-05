@@ -6,4 +6,4 @@
 :heavy_plus_sign: HTML5/CSS3
 :heavy_plus_sign: Javascript
 
-Click on each Superhero once to win the game, but don't click on a Superhero twice or you will lose the game! Check it out here[someLabel](https://github.com/username/repoName/somePathTo/myExampleCode) :link:
+Click on each Superhero once to win the game, but don't click on a Superhero twice or you will lose the game! Check it out [HERE](https://darup67.github.io/clicky-game/) :link:
