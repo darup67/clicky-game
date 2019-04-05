@@ -10,9 +10,6 @@
     overflow: hidden;
 }
 
-
-/* Slide */
-
 .hover img {
     margin-left: 10px;
     -webkit-transform: scale(1.5);

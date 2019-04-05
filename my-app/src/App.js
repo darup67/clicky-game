@@ -47,7 +47,7 @@ class App extends Component {
             <
             header className = "App-header" >
             <
-            h1 className = "App-title" > The Clickster < /h1> <
+            h1 className = "App-title" > Clicky game < /h1> <
             p className = "App-intro" >
             Try not to click the same image twice!
             <
@@ -58,25 +58,16 @@ class App extends Component {
             status = { this.state.status }
             /> <
             Wrapper > {
-                this.state.pups.map(puppy => ( <
+                this.state.superheroes.map(superhero => ( <
                     Card shuffleScoreCard = { this.shuffleScoreCard }
-                    id = { puppy.id }
-                    key = { puppy.id }
-                    image = { puppy.image }
+                    id = { superhero.id }
+                    key = { superhero.id }
+                    image = { superhero.image }
                     />
                 ))
             } <
             /Wrapper> <
-            footer >
-            <
-            p > Designed and built by Heather Mathies.You can find the code < a href = "https://github.com/hmathies/Clicky-Game"
-            target = "_blank"
-            rel = "noopener noreferrer" > here < /a>.</p >
-            <
-            /footer> < /
-            div >
-        );
-    }
-}
 
-export default App;
+        }
+    }
+    export default App;
