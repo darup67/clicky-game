@@ -57,7 +57,7 @@ class App extends Component {
             goal = { 8 }
             status = { this.state.status }
             /> <
-            Wrapper > {
+            wrapper > {
                 this.state.superheroes.map(superhero => ( <
                     Card shuffleScoreCard = { this.shuffleScoreCard }
                     id = { superhero.id }
@@ -66,7 +66,7 @@ class App extends Component {
                     />
                 ))
             } <
-            /Wrapper> <
+            /wrapper> <
 
         }
     }
