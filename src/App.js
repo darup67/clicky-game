@@ -23,8 +23,8 @@ class app extends component {
         } else {
             SuperherosClickIds.push(id)
 
-            if (SuperherosClickIds.length === 8) {
-                this.setState({ score: 8, status: "You Won! Click to play again!", SuperherosClickIds: [] });
+            if (SuperherosClickIds.length === 9) {
+                this.setState({ score: 9, status: "You Won! Click to play again!", SuperherosClickIds: [] });
                 console.log('You Win!');
                 return;
             }
