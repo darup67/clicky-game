@@ -29,7 +29,7 @@ class app extends component {
                 return;
             }
 
-            this.setState({superheroes, SuperherosClickIds score: SuperherosClickIds.length, status: ""});
+            this.setState({superheroes, SuperherosClickIds score: SuperherosClickIds:length, status: ""});
 
             for (let i = superheroes.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
@@ -39,8 +39,8 @@ class app extends component {
     }
 
 
-    render() {
-        return ( <div className = "app" >
+    render() {  {
+        {{ return ( <div className = "app"></div>
             <header className = "App-header" >
             <h1 className = "App-title"> Clicky game </h1> <p className = "App-intro">
             Remember not to click the same image twice!
@@ -56,5 +56,5 @@ class app extends component {
         } </wrapper> <
 
     }
-}
-export default App;
+    }
+export default app;
