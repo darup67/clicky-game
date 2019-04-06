@@ -57,4 +57,5 @@ class app extends component {
 
     }
     }
+}
 export default app;
