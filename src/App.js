@@ -5,12 +5,12 @@ import score from "./components/score";
 import superheroes from "./cards.json";
 import "./app.css";
 
-class App extends Component {
+class app extends component {
     state = {
         superheroes,
         SuperherosClickIds: [],
         score: 0,
-        goal: 8,
+        goal: 9,
         status: ""
     };
 
@@ -29,7 +29,7 @@ class App extends Component {
                 return;
             }
 
-            this.setState({ superheroes, SuperherosClickIds score: SuperherosClickIds.length, status: " " });
+            this.setState({superheroes, SuperherosClickIds score: SuperherosClickIds.length, status: ""});
 
             for (let i = superheroes.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
@@ -40,32 +40,21 @@ class App extends Component {
 
 
     render() {
-        return ( <
-            div className = "App" >
-            <
-            header className = "App-header" >
-            <
-            h1 className = "App-title" > Clicky game < /h1> <
-            p className = "App-intro" >
-            Try not to click the same image twice!
-            <
-            /p> < /
-            header > <
-            Score total = { this.state.score }
-            goal = { 8 }
-            status = { this.state.status }
-            /> <
-            Wrapper > {
-                this.state.superheroes.map(superhero => ( <
-                    Card shuffleScoreCard = { this.shuffleScoreCard }
-                    id = { superhero.id }
-                    key = { superhero.id }
-                    image = { superhero.image }
-                    />
-                ))
-            } <
-            /Wrapper> <
+        return ( <div className = "app" >
+            <header className = "App-header" >
+            <h1 className = "App-title"> Clicky game </h1> <p className = "App-intro">
+            Remember not to click the same image twice!
+            </p> </header> <score total = {this.state.score}
+            goal = {9}
+            status = {this.state.status}/> <wrapper> {
+            this.state.superheroes.map(superhero => ( <
+                Card shuffleScoreCard = {this.shuffleScoreCard}
+                id = {superhero.id}
+                key = {superhero.id}
+                image = {superhero.image}/>
+            ))
+        } </wrapper> <
 
-        }
     }
-    export default App;
+}
+export default App;

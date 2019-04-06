@@ -1,4 +1,4 @@
-.gameScore {
+.gamescore {
     text-align: center;
     height: 70px;
     position: relative;
@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-div.gameScore {}
+div.gamescore {}
 
 h3.score {
     margin-top: 5px;
