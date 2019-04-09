@@ -5,6 +5,7 @@
     "dependencies": {
         "express": "^4.16.4",
         "express-favicon": "^2.0.1",
+        "npm": "^6.9.0",
         "path": "^0.12.7",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
