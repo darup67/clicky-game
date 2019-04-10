@@ -4,6 +4,7 @@ import card from "./components/card";
 import score from "./components/score";
 import superheroes from "./cards.json";
 import "./app.css";
+export default app;
 
 class app extends component {
     state = {
@@ -40,22 +41,28 @@ class app extends component {
 
 
     render() {  {
-        {{ return ( <div className = "app"></div>
-            <header className = "App-header" >
-            <h1 className = "App-title"> Clicky game </h1> <p className = "App-intro">
+        { return ( <div className = "app">
+            <header className = "App-header">
+            <h1 className = "App-title"> Clicky game </h1>
+            <p className = "App-intro">
             Remember not to click the same image twice!
-            </p> </header> <score total = {this.state.score}
+            </p>
+            </header>
+            <score total = {this.state.score}
             goal = {9}
-            status = {this.state.status}/> <wrapper> {
-            this.state.superheroes.map(superhero => ( <
-                Card shuffleScoreCard = {this.shuffleScoreCard}
+            status = {this.state.status}/>
+            <wrapper>
+            {this.state.superheroes.map(superhero => (
+                <Card
+                shuffleScoreCard = {this.shuffleScoreCard}
                 id = {superhero.id}
                 key = {superhero.id}
                 image = {superhero.image}/>
-            ))
-        } </wrapper> <
+            ))}
+        } </wrapper>
+        </div>
 
-    }
-    }
+
+    );
 }
-export default app;
+}
