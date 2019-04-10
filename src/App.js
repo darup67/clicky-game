@@ -65,4 +65,4 @@ class app extends component {
 
     );
 }
-}
+    }};
