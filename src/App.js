@@ -29,7 +29,7 @@ class app extends component {
                 return;
             }
 
-            this.setState({superheroes, SuperherosClickIds score: SuperherosClickIds:length, status: ""});
+            this.setState({superheroes, SuperherosClickIds, score: 0, SuperherosClickIds:length, status: "Game over!"});
 
             for (let i = superheroes.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
