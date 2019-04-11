@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import wrapper from "./components/wrapper";
-import card from "./components/card";
-import score from "./components/score";
+import Card from "./components/card";
+import score from "./components/Score";
 import superheroes from "./cards.json";
 import "./app.css";
-export default app;
+
+
+
 
 class app extends component {
     state = {
@@ -19,7 +21,7 @@ class app extends component {
         let SuperherosClickIds = this.state.SuperherosClickIds;
 
         if (SuperherosClickIds.includes(id)) {
-            this.setState({ SuperherosClickIds: [], score: 0, status: "Game Over! You lost. Click to play again!" });
+            this.setState({SuperherosClickIds: [], score: 0, status: "Game Over! You lost. Click to play again!"});
             return;
         } else {
             SuperherosClickIds.push(id)
@@ -40,7 +42,7 @@ class app extends component {
     }
 
 
-    render() {  {
+    render()  { {
         { return ( <div className = "app">
             <header className = "App-header">
             <h1 className = "App-title"> Clicky game </h1>
@@ -61,8 +63,13 @@ class app extends component {
             ))}
         } </wrapper>
         </div>
+        )
+    }
 
-
-    );
 }
-    }};
+
+}}
+
+);
+
+export default App;
