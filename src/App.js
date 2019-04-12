@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import wrapper from "./components/wrapper";
-import Card from "./components/card";
-import score from "./components/Score";
+import Card from "./components/cards";
+import score from "./components/score";
 import superheroes from "./cards.json";
-import "./app.css";
+import "./App.css";
 
 
 
 
-class app extends component {
+class App extends Component {
     state = {
         superheroes,
         SuperherosClickIds: [],
@@ -32,7 +32,7 @@ class app extends component {
                 return;
             }
 
-            this.setState({superheroes, SuperherosClickIds, score: 0, SuperherosClickIds:length, status: "Game over!"});
+            this.setState({superheroes, SuperherosClickIds, score: 0, status: "Game over!"});
 
             for (let i = superheroes.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
@@ -42,8 +42,8 @@ class app extends component {
     }
 
 
-    render()  { {
-        { return ( <div className = "app">
+    render()  {
+         return ( <div className = "app">
             <header className = "App-header">
             <h1 className = "App-title"> Clicky game </h1>
             <p className = "App-intro">
@@ -61,15 +61,13 @@ class app extends component {
                 key = {superhero.id}
                 image = {superhero.image}/>
             ))}
-        } </wrapper>
+         </wrapper>
         </div>
         )
     }
 
 }
 
-}}
 
-);
 
 export default App;
